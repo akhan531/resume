@@ -1,0 +1,283 @@
+%-------------------------
+% CV in Latex
+% Based on the template by Jake Gutierrez / sb2nov
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% pdfTeX-only; skipped under XeTeX/LuaTeX (tectonic)
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+\fi
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.67in}
+\addtolength{\evensidemargin}{-0.67in}
+\addtolength{\textwidth}{1.34in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\ifdefined\pdfgentounicode
+  \pdfgentounicode=1
+\fi
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{@{}p{0.78\textwidth}@{\extracolsep{\fill}}r@{}}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{@{}p{0.79\textwidth}@{\extracolsep{\fill}}r@{}}
+      \small#1 & \small#2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\usepackage{calc} % added
+\newcommand{\resumeSubSubheadingLeft}[2]{% % added
+\begin{description}[leftmargin=!,labelwidth=\widthof{\small\bfseries #1}]
+    \item[\small #1]{\textit{\small  #2}}
+\end{description}
+\vspace{-15pt}
+}
+
+% CV entry: flowing text with a right-aligned date on the final line
+\newcommand{\cvEntry}[2]{%
+  \item\small{#1 \hfill \textit{#2}}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% Slightly tighter bullet spacing
+\setlist[itemize,2]{itemsep=0pt, parsep=0pt}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape ALI KHAN} \\ \vspace{2pt}
+    \small 908-900-2091 $|$ \href{mailto:abk135@scarletmail.rutgers.edu}{\underline{abk135@scarletmail.rutgers.edu}} $|$
+    \href{https://github.com/akhan531}{\underline{github.com/akhan531}} $|$
+    \href{https://linkedin.com/in/alikhan531}{\underline{linkedin.com/in/alikhan531}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rutgers Honors College}{New Brunswick, NJ}
+      {B.S. in Computer Science and Mathematics; GPA: 4.00/4.00}{Expected May 2028}
+      \resumeSubSubheadingLeft
+        {Graduate}{Economics and Computation (CS 598)*, Design and Analysis of Data Structures and Algorithms I (CS 513)*}
+      \resumeSubSubheadingLeft
+        {Mathematics}{Real Analysis I, Mathematical Theory of Probability, Introduction to Stochastic Processes, Stochastic Calculus, Linear Optimization, Combinatorial Theory*, Linear Algebra (proof-based)*, Introduction to Mathematical Reasoning}
+      \resumeSubSubheadingLeft
+        {Computer Science}{Design and Analysis of Computer Algorithms, Introduction to Artificial Intelligence, Data Structures, Introduction to Discrete Structures}
+      \resumeSubSubheadingLeft
+        {}{*in progress, Fall 2026}
+  \resumeSubHeadingListEnd
+
+
+%-----------PUBLICATIONS-----------
+\section{Publications and Preprints}
+  \resumeSubHeadingListStart
+    \cvEntry{\textbf{A. Khan.} ``Channels to Targets: A Closed-Form Coordinate System for Silence-Blindness in LLM Observers.'' \textit{Workshop on Epistemic Intelligence in Machine Learning (EIML3), NeurIPS 2026.} 
+    Code: \href{https://github.com/akhan531/Control-On-LLMs}{\underline{github.com/akhan531/Control-On-LLMs}}}{2026}
+  \resumeSubHeadingListEnd
+
+
+%-----------RESEARCH EXPERIENCE-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Research Fellow, Chancellor's Signature Initiative SURF}{May -- Jul 2026}
+      {Rutgers--New Brunswick Office for Research $|$ Faculty mentor: Prof. Laurent Burlion}{New Brunswick, NJ}
+      \resumeItemListStart
+        \resumeItem{Independently developed a dynamical-systems characterization of multi-agent LLM debate, modeling deliberation as Bayesian belief updating and tracking progress by the divergence between the group's public belief and the full-information posterior}
+        \resumeItem{Established that a Lyapunov argument certifies convergence under honest disclosure and fails under strategic withholding; validated the model against Llama-3.3-70B debates over 40 seeds}
+        \resumeItem{Demonstrated a misaligned incentive in LLM-judge credit assignment: withholding a pivotal clue until late in the debate earns a higher credit share than early disclosure, and the effect strengthens with judge capability}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Researcher}{Sep 2025 -- May 2026}
+      {Mathematical Optimization Research Group $|$ Advisors: Prof. Farzad Yousefian, Fateme Maleki}{New Brunswick, NJ}
+      \resumeItemListStart
+        \resumeItem{Designed IncentOSFL, a one-shot variant of an incentivized federated learning framework, by observing that a convex loss drives every client's local model to the same global optimum, making per-round aggregation redundant}
+        \resumeItem{Reduced per-round communication from full model parameters to data-contribution values alone; validated on MNIST, showing no client drift and convergence of client contributions to a Nash equilibrium independent of initialization}
+        \resumeItem{Built an industrial case study on the UCI Steel Plates Faults dataset demonstrating that the incentivized mechanism outperforms the data-gatekeeper's selfish optimum for every participant}
+        \resumeItem{Supported by U.S. Department of Energy grants \#DE-SC0023303 and \#DE-SC0025570}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Fellow, Aresty Summer Science Program}{May -- Jul 2025}
+      {Swarm Intelligence Lab $|$ PI: Prof. Daniel Burbano Lombana $|$ Mentor: Deze Liu}{New Brunswick, NJ}
+      \resumeItemListStart
+        \resumeItem{Analyzed zebrafish obstacle-avoidance behavior under five illumination conditions using visual-input metrics, extracting trajectories with AnimalTA and filtering position data in MATLAB}
+        \resumeItem{Quantified illumination effects on linear speed, opacity, thigmotaxis, and spatial entropy via factorial analysis across single-fish and dyad conditions}
+        \resumeItem{Trained a random forest classifier with recursive feature selection to distinguish obstacle-avoidance behaviors at 90\% accuracy}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------TALKS-----------
+\section{Talks and Presentations}
+  \resumeSubHeadingListStart
+    \cvEntry{``Belief Dynamics and Strategic Timing in Multi-Agent LLM Debate.'' A. Khan and L. Burlion. Poster and lightning talk, \textit{2026 CSI SURF Research Symposium}, Rutgers--New Brunswick.}{Jul 2026}
+    \cvEntry{``IncentOSFL: A Communication-Efficient Variant for Incentivized Federated Learning.'' A. Khan, F. Maleki, F. Yousefian. Poster, \textit{2026 ISE Research Day}, Rutgers Department of Industrial and Systems Engineering.}{May 2026}
+    \cvEntry{``Convex Regularized Portfolio Optimization.'' Directed Reading Program symposium, Rutgers Department of Mathematics. Mentor: Anupam Nayak.}{Dec 2025}
+    \cvEntry{``Vision-based Collective Group Formations in Fish Schools.'' A. Khan, D. Liu, D. Burbano Lombana. Poster, \textit{2025 Aresty Summer Research Symposium}, Rutgers--New Brunswick.}{Jul 2025}
+  \resumeSubHeadingListEnd
+
+
+%-----------AWARDS-----------
+\section{Awards, Honors, and Fellowships}
+  \resumeSubHeadingListStart
+    \cvEntry{\textbf{Chancellor's Signature Initiative Summer Undergraduate Research Fellowship} --- Rutgers--New Brunswick Office for Research. Competitive university-wide research fellowship, \$6,000.}{2026}
+    \cvEntry{\textbf{Second Place, Undergraduate Research Poster Presentation} --- 2026 ISE Research Day, Rutgers Department of Industrial and Systems Engineering. Awarded for work on incentivized federated learning; \$200 prize.}{2026}
+    \cvEntry{\textbf{Aresty Summer Science Program} --- Aresty Research Center for Undergraduates, Rutgers University. Competitive summer research fellowship, \$3,000.}{2025}
+    \cvEntry{\textbf{Dean's Scholarship} --- Rutgers Honors College. Merit scholarship, \$5,000 per semester.}{2024 -- present}
+    \cvEntry{\textbf{Dean's List} --- Rutgers School of Arts and Sciences. All semesters.}{2024 -- present}
+  \resumeSubHeadingListEnd
+
+
+%-----------TEACHING-----------
+\section{Teaching Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Part-Time Lecturer}{Sep 2025 -- Present}
+      {Department of Computer Science, Rutgers University}{New Brunswick, NJ}
+      \resumeItemListStart
+        \resumeItem{Lead a weekly recitation section of approximately 50 students and hold weekly office hours}
+      \resumeItemListEnd
+      \resumeSubSubheading{CS 205, Introduction to Discrete Structures I --- Prof. Akash Sengupta}{Fall 2026, Spring 2026}
+      \resumeSubSubheading{CS 205, Introduction to Discrete Structures I --- Prof. Jingjin Yu}{Fall 2025}
+
+    \vspace{6pt}
+    \resumeSubheading
+      {Grader}{Jun 2025 -- Present}
+      {Department of Mathematics, Rutgers University}{New Brunswick, NJ}
+      \resumeSubSubheading{Math 300, Introduction to Mathematical Reasoning --- Prof. Juan Pablo Mej\'ia-Ramos}{Fall 2026}
+      \resumeSubSubheading{Math 300, Introduction to Mathematical Reasoning --- Prof. Christopher Alexander}{Fall 2026}
+      \resumeSubSubheading{Math 478, Introduction to Stochastic Processes --- Prof. Heeyoung Kwon}{Spring 2026}
+      \resumeSubSubheading{Math 477, Mathematical Theory of Probability --- Prof. Joshua Salamon}{Fall 2025}
+      \resumeSubSubheading{Math 477, Mathematical Theory of Probability --- Prof. Triet Pham}{Summer 2025}
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Selected Projects}
+    \resumeSubHeadingListStart
+
+        \resumeProjectHeading
+          {\textbf{Equilibrium in a Universal Basic Income Economy} $|$ \emph{Math 490, Prof. Kim Weston}}{May 2026}
+          \resumeItemListStart
+            \resumeItem{Modeled a continuous-time market with heterogeneous CARA agents receiving stochastic income transfers, deriving the state-price deflator from martingale conditions on discounted assets}
+            \resumeItem{Solved the agents' dynamic optimization via an HJB equation under an exponential ansatz, obtaining closed-form optimal portfolio and initial consumption}
+            \resumeItem{Imposed stock and initial-consumption market clearing to reduce equilibrium characterization to a PDE system for the agents' value functions}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Regime-Robust Signal Weighting} $|$ \emph{CS 494 Independent Study, Prof. Am\'elie Marian}}{Spring 2026}
+          \resumeItemListStart
+            \resumeItem{Adapted the Disparity Compensation Algorithm from explainable fair ranking to portfolio construction by reframing demographic disparity as a gap in risk-adjusted performance across volatility regimes}
+            \resumeItem{Converted the mechanism from additive selection bonuses to multiplicative signal weights; implemented an end-to-end backtest over 2010--2024 DJIA data with rolling-median regime detection and dollar-neutral portfolio construction}
+            \resumeItem{Code: \href{https://github.com/akhan531/CS494-Project}{\underline{github.com/akhan531/CS494-Project}}}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Finite State Automata Simulator} $|$ \emph{JavaScript, TypeScript, Vis.js}}{Jul 2025}
+          \resumeItemListStart
+            \resumeItem{Built an interactive deterministic automata simulator with real-time state visualization; deployed to the Rutgers CS Department as an official instructional tool supporting 200+ students}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, MATLAB, C++, Java, JavaScript, SQL} \\
+     \textbf{Scientific Computing}{: NumPy, Pandas, Scikit-Learn, CVXPY, Matplotlib} $|$ \textbf{Tools}{: Git, \LaTeX, Jupyter, Mathematica}
+    }}
+ \end{itemize}
+
+\end{document}

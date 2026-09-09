@@ -1,0 +1,34 @@
+{
+  // Tectonic is the only TeX engine on this machine (~/bin/tectonic).
+  // It is self-contained and downloads packages on demand, so there is
+  // no MacTeX/TeX Live install to maintain.
+  "latex-workshop.latex.tools": [
+    {
+      "name": "tectonic",
+      "command": "/Users/alikhan/bin/tectonic",
+      "args": [
+        "-X",
+        "compile",
+        "%DOC_EXT%",
+        "--synctex",
+        "--keep-logs",
+        "--outdir",
+        "%OUTDIR%"
+      ],
+      "env": {}
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "tectonic",
+      "tools": ["tectonic"]
+    }
+  ],
+  // Put CV.pdf next to CV.tex rather than in a build subdirectory.
+  "latex-workshop.latex.outDir": "%DIR%",
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.view.pdf.viewer": "tab",
+  // Tectonic writes only .pdf/.log/.synctex.gz -- there are no aux files to
+  // clean, and deleting .synctex.gz would break forward/reverse search.
+  "latex-workshop.latex.autoClean.run": "never"
+}
