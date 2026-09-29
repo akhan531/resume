@@ -263,6 +263,15 @@
           \resumeItemListEnd
 
         \resumeProjectHeading
+          {\textbf{Genomic Variant Triage with Evo2} $|$ \emph{Python, Next.js, TypeScript, Modal, Anthropic API}}{Feb--Mar 2026}
+          \resumeItemListStart
+            \resumeItem{Built a variant-interpretation tool scoring single nucleotide variants by delta log-likelihood from the Evo2 7B genome foundation model over 8{,}192 bp UCSC reference windows, served on Modal H100 GPUs}
+            \resumeItem{Designed a splicing-disruption module binning canonical splice-site risk by exon--intron boundary distance from the Ensembl REST API, capturing pathogenicity the raw likelihood score misses}
+            \resumeItem{Developed a VUS triage pipeline ranking panels by a weighted composite of pathogenicity, splice severity, cancer-gene tier, and confidence, with a 29-gene annotation database, live ClinVar context, sentence-transformer RAG, and LLM-generated tumor board notes; covered by 35 unit tests}
+            \resumeItem{Code: \href{https://github.com/akhan531/Biotech-AI-Tool}{\underline{github.com/akhan531/Biotech-AI-Tool}}}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
           {\textbf{Finite State Automata Simulator} $|$ \emph{JavaScript, TypeScript, Vis.js}}{Jul 2025}
           \resumeItemListStart
             \resumeItem{Built an interactive deterministic automata simulator with real-time state visualization; deployed to the Rutgers CS Department as an official instructional tool supporting 200+ students}
