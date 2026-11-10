@@ -1,6 +1,6 @@
 # CCT Resume Plan (handoff)
 
-Status as of Nov 8, 2026: content plan settled, no `.tex` written yet.
+Status as of Nov 10, 2026: `resume_cct.tex` and `resume_cct.pdf` built (one page) and pushed; Ali now editing to taste.
 Target output: `resume_cct.tex` and `resume_cct.pdf` in this repo, built from the same template as `CV.tex`.
 Application target: RWJBH careers site, part-time Clinical Care Technician (CCT), RWJ New Brunswick, by Mon Nov 9, 2026.
 
